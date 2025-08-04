@@ -182,12 +182,16 @@ def save_labels(label_to_id: Dict[str, int], id_to_label: Dict[int, str]):
 def save_train_metadata(
     num_epochs: int,
     best_val_f1_score: float,
+    best_val_precision: float,
+    best_val_recall: float,
     early_stopping_triggered: bool,
     save_dir: Path
 ):
     """Save training metadata like the best validation score, etc."""
     train_metadata = {
         'num_epochs': num_epochs,
+        'best_val_precision': best_val_precision,
+        'best_val_recall': best_val_recall,
         'best_val_f1_score': best_val_f1_score,
         'early_stopping_triggered': early_stopping_triggered
     }

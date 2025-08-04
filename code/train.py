@@ -127,6 +127,8 @@ def train(
         save_train_metadata(
             num_epochs=epoch,
             best_val_f1_score=best_val_f1,
+            best_val_precision=best_val_precision,
+            best_val_recall=best_val_recall,
             early_stopping_triggered=early_stopping_triggered,
             save_dir=model_dir
         )
