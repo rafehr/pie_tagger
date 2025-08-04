@@ -1,0 +1,21 @@
+{
+    "data": {
+        "train_path": "../data/pie_train.tsv",
+        "dev_path": "../data/pie_dev.tsv",
+        "test_path": "../data/pie_test.tsv",
+        "bio_scheme": "bio2"
+    },
+    "model": {
+        "pretrained_model_name": "bert-base-multilingual-cased",
+        "tokenizer_name": "bert-base-multilingual-cased"
+    },
+    "training": {
+        "batch_size": 8,
+        "num_epochs": 20,
+        "learning_rate": 3e-05,
+        "save_dir": "./saved/",
+        "seed": 42,
+        "patience": 2,
+        "cross_validation": false
+    }
+}

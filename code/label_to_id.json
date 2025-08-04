@@ -1,0 +1,11 @@
+{
+    "B-BOTH": 0,
+    "B-FIG": 1,
+    "B-LIT": 2,
+    "B-UND": 3,
+    "I-BOTH": 4,
+    "I-FIG": 5,
+    "I-LIT": 6,
+    "I-UND": 7,
+    "O": 8
+}
